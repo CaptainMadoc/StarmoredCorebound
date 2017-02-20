@@ -1,0 +1,16 @@
+{
+  "projectileName" : "wg-rf35-bullet",
+  "image" : "wg-rf35-bullet.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "lightColor" : [235, 126, 2],
+  "damageKind" : "default"
+}

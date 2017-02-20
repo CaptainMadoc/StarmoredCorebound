@@ -1,0 +1,18 @@
+{
+  "projectileName" : "wg-hg512-bullet1",
+  "image" : "wg-hg512-bullet1.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "speed" : 50,
+  "power" : 5.0,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "damageKind" : "default"
+}
+
+

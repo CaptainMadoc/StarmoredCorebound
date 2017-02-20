@@ -1,0 +1,17 @@
+{
+  "projectileName" : "wg-xp1000-bullet",
+  "frames" : "wg-xp1000-bullet.png",
+  "animationCycle" : 0.25,
+  "level" : 1,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "lightColor" : [32, 156, 250],
+  "damageKind" : "default"
+}

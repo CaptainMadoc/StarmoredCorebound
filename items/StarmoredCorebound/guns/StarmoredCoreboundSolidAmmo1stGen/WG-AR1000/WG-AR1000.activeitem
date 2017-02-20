@@ -1,0 +1,65 @@
+{
+	"itemName" : "WG-AR1000",
+	"price" : 0,
+	"maxStack" : 1,
+	"rarity" : "common",
+	"category" : "Solid : Machinegun",
+	"description" : "",
+	"shortdescription" : "WG-AR1000",
+	"tooltipKind" : "base",
+	"twoHanded" : false,
+	
+	"inventoryIcon" : "/items/StarmoredCorebound/sprite/guns/StarmoredCoreboundSolid1stGen/wg-ar1000.png",
+	
+	"animation" : "gunsprite.animation",
+	"animationParts" : { },
+	"animationCustom" : { },
+	"animationKey" : {				//animationtracks etc
+		"key" : 1,
+		"tracks" : {
+			"shoot" : [
+				{
+					"value" : {"gun_rotation" : 0, "gun_x" : 0.25},
+					"step" : 2,
+					"sound" : {}
+				}, 
+				{
+					"value" : {"gun_rotation" : 7, "gun_x" : 0.25},
+					"step" : 5,
+					"sound" : {}
+				}, 
+				{
+					"value" : {"gun_rotation" : 0, "gun_x" : 0.25},
+					"step" : 5,
+					"sound" : {}
+				}
+			]
+		},
+		"fixed" : false,
+		"doneplaying" : "",
+		"step" : 30,
+		"currentstep" : 1
+	}, 
+	"parts" : {"gun_x" : 0.25, "gun_y" : 0, "gun_rotation" : 0}, //set your offset stuff here
+	
+	//The higher, The more harder to control
+	"gunConfig" : {	
+		"inaccuracy" : 0, //Your random number generator
+		"compatibleAmmo" : ["StarmoredCoreboundSolidAmmo1stGen" ],
+		"projectileConfig" : {"speed" : 75},
+		"projectileType" : "wg-mg500-bullet",
+		"smokeEffect" : true,
+		"shellEffect" : true,
+		"fireOffset" : [2.90,0.38],			//the projectile pos
+		"shellOffset" : [1.15,0.50], 		//the falling shell init pos
+		"fireSpeed" : 0.08,			//atataatatatatata
+		"gunSounds" : ["fire"], 		//Sounds from .animation
+		"fireMode" : "auto", 		//auto, burst, semi
+		"burstAmount" : 5,
+		"burstCooldown" : 0.8,
+		"recoilPower" : 1,			//The higher, The more harder to control
+		"recoilRecovery" : 1 		//Higher the slower
+	},
+	
+	"scripts" : ["/items/StarmoredCorebound/main.lua"]
+}

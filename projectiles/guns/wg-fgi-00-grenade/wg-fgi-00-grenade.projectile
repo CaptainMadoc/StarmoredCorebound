@@ -1,0 +1,19 @@
+{
+  "projectileName" : "wg-fgi-00-grenade",
+  "frames" : "wg-fgi-00-grenade.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/wg-fgi-00/wg-fgi-00.config"
+    }
+  ],
+  "emitters" : [ "rocketsmoke" ],
+  "flippable" : true,
+  "physics" : "wg-pb26-grenade",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

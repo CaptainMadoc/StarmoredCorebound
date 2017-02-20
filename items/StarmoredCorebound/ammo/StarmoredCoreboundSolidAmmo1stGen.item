@@ -1,0 +1,10 @@
+{
+	"itemName" : "StarmoredCoreboundSolidAmmo1stGen",
+	"rarity" : "common",
+	"category" : "Ammo",
+	"price" : 0,
+	"maxStack" : 99999,
+	"inventoryIcon" : "/items/StarmoredCorebound/sprite/shells/StarmoredCoreboundSolidAmmo1stGen.png",
+	"description" : "",
+	"shortdescription" : "1st-Gen Solid Ammo"
+}

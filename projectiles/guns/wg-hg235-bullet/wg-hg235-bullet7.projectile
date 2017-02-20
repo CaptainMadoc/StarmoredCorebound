@@ -1,0 +1,18 @@
+{
+  "projectileName" : "wg-hg235-bullet7",
+  "image" : "wg-hg235-bullet7.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "speed" : 50,
+  "power" : 5.0,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "damageKind" : "default"
+}
+
+

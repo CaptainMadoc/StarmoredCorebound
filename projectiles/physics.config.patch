@@ -1,0 +1,19 @@
+    [
+      {
+        "op" : "add",
+        "path" : "/wg-pb26-grenade",
+        "value" : {
+		  "mass" : 1.0,
+          "gravityMultiplier" : 0.2,
+          "bounceFactor" : 0.0,
+          "maxMovementPerStep" : 0.4,
+          "groundSlideMovementEnabled" : false,
+          "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+          "ignorePlatformCollision" : true,
+          "groundFriction" : 1.0,
+          "airFriction" : 0.0,
+          "liquidFriction" : 2.0,
+          "speedLimit" : null
+        }
+      }
+    ]

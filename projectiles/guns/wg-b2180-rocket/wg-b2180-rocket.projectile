@@ -1,0 +1,22 @@
+{
+  "projectileName" : "wg-b2180-rocket",
+  "frames" : "wg-b2180-rocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [235, 126, 2],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosion2.config"
+    }
+  ],
+  "emitters" : [ "rocketsmoke" ],
+  "flippable" : true,
+  "speed" : 1.0,
+  "acceleration" : 300,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

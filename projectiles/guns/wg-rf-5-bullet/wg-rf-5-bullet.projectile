@@ -1,0 +1,17 @@
+{
+  "projectileName" : "wg-rf-5-bullet",
+  "image" : "wg-rf-5-bullet.png",
+  "animationCycle" : 0.25,
+  "level" : 1,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "lightColor" : [235, 126, 2],
+  "damageKind" : "default"
+}
