@@ -2,6 +2,7 @@
   "projectileName" : "wg-ar1000-bullet",
   "frames" : "wg-ar1000-bullet.png",
   "animationCycle" : 0.25,
+  "lightColor" : [255, 100, 26],
   "level" : 1,
   "frameNumber" : 1,
   "damageKindImage" : "icon.png",

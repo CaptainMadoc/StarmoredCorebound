@@ -2,6 +2,7 @@
   "projectileName" : "wg-mga1-bullet",
   "image" : "wg-mga1-bullet.png",
   "animationCycle" : 0.25,
+  "lightColor" : [255, 100, 26],
   "frameNumber" : 1,
   "damageKindImage" : "icon.png",
   "pointLight" : false,

@@ -2,6 +2,7 @@
   "projectileName" : "wg-hg235-bullet6",
   "image" : "wg-hg235-bullet6.png",
   "animationCycle" : 0.25,
+  "lightColor" : [255, 100, 26],
   "frameNumber" : 1,
   "pointLight" : false,
   "speed" : 50,
