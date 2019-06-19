@@ -1,0 +1,7 @@
+{
+  "frames" : "wg-b2120-flash.png",
+  "variants" : 1,
+  "frameNumber" : 1,
+  "animationCycle" : 0.03,
+  "offset" : [0.375, 0]
+}

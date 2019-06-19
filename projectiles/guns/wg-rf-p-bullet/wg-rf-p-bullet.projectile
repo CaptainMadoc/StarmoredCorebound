@@ -13,6 +13,5 @@
       "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
     }
   ],
-  "lightColor" : [235, 126, 2],
   "damageKind" : "default"
 }

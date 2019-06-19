@@ -1,0 +1,53 @@
+{
+  "projectileName" : "wa-finger-bullet",
+  "image" : "wa-finger-bullet.png",
+  "animationCycle" : 0.25,
+  "lightColor" : [255, 100, 26],
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "timeToLive" : 0.01,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "wa-finger-bulletlet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 0.85,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 8
+    },
+    {
+      "action" : "projectile",
+      "type" : "wa-finger-bulletlet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 0.9,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 8
+    },
+    {
+      "action" : "projectile",
+      "type" : "wa-finger-bulletlet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 0.95,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 8
+    },
+    {
+      "action" : "projectile",
+      "type" : "wa-finger-bulletlet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 1,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 8
+    },
+    {
+      "action" : "projectile",
+      "type" : "wa-finger-bulletlet",
+      "inheritDamageFactor" : 0.3,
+      "inheritSpeedFactor" : 1.05,
+      "angleAdjust" : 0,
+      "fuzzAngle" : 8
+    }
+  ],
+  "damageKind" : "default"
+}

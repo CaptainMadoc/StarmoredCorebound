@@ -1,15 +1,15 @@
 {
-	"itemName" : "WG-HG235",
+	"itemName" : "WG-B2120",
 	"price" : 0,
 	"maxStack" : 1,
 	"rarity" : "common",
-	"category" : "Solid : Handgun",
+	"category" : "Solid : Bazooka",
 	"description" : "",
-	"shortdescription" : "WG-HG235",
+	"shortdescription" : "WG-B2120",
 	"tooltipKind" : "base",
 	"twoHanded" : false,
 	
-	"inventoryIcon" : "/items/StarmoredCorebound/sprite/guns/StarmoredCoreboundSolid1stGen/wg-hg235.png",
+	"inventoryIcon" : "/items/StarmoredCorebound/sprite/guns/StarmoredCoreboundSolid1stGen/WG-B2120.png",
 	
 	"animation" : "gunsprite.animation",
 	"animationParts" : { },
@@ -19,18 +19,18 @@
 		"tracks" : {
 			"shoot" : [
 				{
-					"value" : {"gun_rotation" : 0, "gun_x" : 0.25},
+					"value" : {"gun_rotation" : 7, "gun_x" : 0.25},
 					"step" : 2,
 					"sound" : {}
 				}, 
 				{
-					"value" : {"gun_rotation" : 7, "gun_x" : 0.25},
+					"value" : {"gun_rotation" : 14, "gun_x" : -0.25},
 					"step" : 5,
 					"sound" : {}
 				}, 
 				{
 					"value" : {"gun_rotation" : 0, "gun_x" : 0.25},
-					"step" : 5,
+					"step" : 4,
 					"sound" : {}
 				}
 			]
@@ -46,20 +46,19 @@
 	"gunConfig" : {	
 		"inaccuracy" : 0, //Your random number generator
 		"compatibleAmmo" : ["StarmoredCoreboundSolidAmmo1stGen" ],
-		"projectileConfig" : {"speed" : 65},
-		"projectileType" : "wg-hg235-bullet",
+		"projectileConfig" : {"speed" : 10, "power" : 80},
+		"projectileType" : "wg-b2120-rocket",
 		"smokeEffect" : true,
 		"shellEffect" : true,
-		"fireOffset" : [1.85,0.32],			//the projectile pos
+		"fireOffset" : [4,0.55],			//the projectile pos
 		"shellOffset" : [1.15,0.50], 		//the falling shell init pos
-		"fireSpeed" : 0.3,			//atataatatatatata
+		"fireSpeed" : 0.9,			//atataatatatatata
 		"gunSounds" : ["fire"], 		//Sounds from .animation
 		"fireMode" : "auto", 		//auto, burst, semi
 		"burstAmount" : 5,
 		"burstCooldown" : 0.8,
 		"recoilPower" : 1,			//The higher, The more harder to control
-		"recoilRecovery" : 1, 		//Higher the slower
-		"reloadCooldown" 	: 0.1
+		"recoilRecovery" : 1 		//Higher the slower
 	},
 	
 	"scripts" : ["/items/StarmoredCorebound/main.lua"]

@@ -58,7 +58,8 @@
 		"burstAmount" : 5,
 		"burstCooldown" : 0.8,
 		"recoilPower" : 1,			//The higher, The more harder to control
-		"recoilRecovery" : 1 		//Higher the slower
+		"recoilRecovery" : 1, 		//Higher the slower
+		"reloadCooldown" 	: 0.1
 	},
 	
 	"scripts" : ["/items/StarmoredCorebound/main.lua"]

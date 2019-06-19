@@ -37,7 +37,7 @@
 					"firing" : {
 						"fire" : {
 							"properties" : {
-								"image" : "/animations/StarmoredCorebound/wg-rf-5-flash/wg-rf-5-flash.png:<frame>"
+								"image" : "/animations/StarmoredCorebound/wg-rfm118-flash/wg-rfm118-flash.png:<frame>"
 							}
 						},
 						"off" : {
@@ -50,7 +50,7 @@
 				"properties" : {
 					"zLevel" : 1,
 					"centered" : true,
-					"offset" : [1, 0.125],
+					"offset" : [0.625, 0.315],
 					"transformationGroups" : ["gun"]
 				},
 		
@@ -58,7 +58,7 @@
 					"gun" : {
 						"default" : {
 							"properties" : {
-								"image" : "/items/StarmoredCorebound/sprite/guns/StarmoredCoreboundSolid1stGen/wg-rf-p.png"
+								"image" : "/items/StarmoredCorebound/sprite/guns/StarmoredCoreboundSolid1stGen/wg-rfm118.png"
 							}
 						}
 					}
@@ -68,7 +68,7 @@
 	},
 	
 	"sounds" : {
-		"fire" : ["/sfx/StarmoredCorebound/ShotRifleBig.ogg"],
+		"fire" : ["/sfx/StarmoredCorebound/ShotRifle.ogg"],
 		"dry" : ["/sfx/objects/hiddenswitch1.ogg"]
 	},
 	

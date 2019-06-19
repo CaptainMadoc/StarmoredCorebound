@@ -1,15 +1,15 @@
 {
-	"itemName" : "WG-HG235",
+	"itemName" : "WG-RFM118",
 	"price" : 0,
 	"maxStack" : 1,
 	"rarity" : "common",
-	"category" : "Solid : Handgun",
+	"category" : "Solid : Machine Rifle",
 	"description" : "",
-	"shortdescription" : "WG-HG235",
+	"shortdescription" : "WG-RFM118",
 	"tooltipKind" : "base",
 	"twoHanded" : false,
 	
-	"inventoryIcon" : "/items/StarmoredCorebound/sprite/guns/StarmoredCoreboundSolid1stGen/wg-hg235.png",
+	"inventoryIcon" : "/items/StarmoredCorebound/sprite/guns/StarmoredCoreboundSolid1stGen/wg-rfm118.png",
 	
 	"animation" : "gunsprite.animation",
 	"animationParts" : { },
@@ -47,19 +47,18 @@
 		"inaccuracy" : 0, //Your random number generator
 		"compatibleAmmo" : ["StarmoredCoreboundSolidAmmo1stGen" ],
 		"projectileConfig" : {"speed" : 65},
-		"projectileType" : "wg-hg235-bullet",
+		"projectileType" : "wg-rf35-bullet",
 		"smokeEffect" : true,
 		"shellEffect" : true,
-		"fireOffset" : [1.85,0.32],			//the projectile pos
+		"fireOffset" : [4.35,0.50],			//the projectile pos
 		"shellOffset" : [1.15,0.50], 		//the falling shell init pos
-		"fireSpeed" : 0.3,			//atataatatatatata
+		"fireSpeed" : 0.15,			//atataatatatatata
 		"gunSounds" : ["fire"], 		//Sounds from .animation
 		"fireMode" : "auto", 		//auto, burst, semi
 		"burstAmount" : 5,
 		"burstCooldown" : 0.8,
 		"recoilPower" : 1,			//The higher, The more harder to control
-		"recoilRecovery" : 1, 		//Higher the slower
-		"reloadCooldown" 	: 0.1
+		"recoilRecovery" : 1 		//Higher the slower
 	},
 	
 	"scripts" : ["/items/StarmoredCorebound/main.lua"]

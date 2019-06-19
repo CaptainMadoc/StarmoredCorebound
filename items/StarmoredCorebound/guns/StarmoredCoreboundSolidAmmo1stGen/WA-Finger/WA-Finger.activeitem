@@ -1,19 +1,20 @@
 {
-	"itemName" : "WG-HG235",
+	"itemName" : "WA-Finger",
 	"price" : 0,
 	"maxStack" : 1,
 	"rarity" : "common",
-	"category" : "Solid : Handgun",
+	"category" : "Solid : Machinegun",
 	"description" : "",
-	"shortdescription" : "WG-HG235",
+	"shortdescription" : "WA-Finger",
 	"tooltipKind" : "base",
 	"twoHanded" : false,
 	
-	"inventoryIcon" : "/items/StarmoredCorebound/sprite/guns/StarmoredCoreboundSolid1stGen/wg-hg235.png",
+	"inventoryIcon" : "/items/StarmoredCorebound/sprite/guns/StarmoredCoreboundSolid1stGen/WA-Finger2.png",
 	
 	"animation" : "gunsprite.animation",
 	"animationParts" : { },
 	"animationCustom" : { },
+	"handGrip" : "wrap",
 	"animationKey" : {				//animationtracks etc
 		"key" : 1,
 		"tracks" : {
@@ -46,21 +47,20 @@
 	"gunConfig" : {	
 		"inaccuracy" : 0, //Your random number generator
 		"compatibleAmmo" : ["StarmoredCoreboundSolidAmmo1stGen" ],
-		"projectileConfig" : {"speed" : 65},
-		"projectileType" : "wg-hg235-bullet",
+		"projectileConfig" : {"speed" : 95},
+		"projectileType" : "wa-finger-bullet",
 		"smokeEffect" : true,
 		"shellEffect" : true,
-		"fireOffset" : [1.85,0.32],			//the projectile pos
+		"fireOffset" : [2.125, 0],			//the projectile pos
 		"shellOffset" : [1.15,0.50], 		//the falling shell init pos
-		"fireSpeed" : 0.3,			//atataatatatatata
+		"fireSpeed" : 0.15,			//atataatatatatata
 		"gunSounds" : ["fire"], 		//Sounds from .animation
 		"fireMode" : "auto", 		//auto, burst, semi
 		"burstAmount" : 5,
 		"burstCooldown" : 0.8,
 		"recoilPower" : 1,			//The higher, The more harder to control
-		"recoilRecovery" : 1, 		//Higher the slower
-		"reloadCooldown" 	: 0.1
+		"recoilRecovery" : 1 		//Higher the slower
 	},
 	
-	"scripts" : ["/items/StarmoredCorebound/main.lua"]
+	"scripts" : ["/items/StarmoredCorebound/wa-finger.lua"]
 }

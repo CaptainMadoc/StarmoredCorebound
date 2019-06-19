@@ -184,7 +184,7 @@ function shoot()
 		
 		if self.gunConfig.magazineMax then
 			if self.gunConfig.magazineCurrent > 0 then
-				self.gunConfig.magazineCurrent = self.gunConfig.magazineCurrent - 1
+				self.gunConfig.magazineCurrent = self.gunConfig.magazineCurrent - 5
 				itemammo = true
 			else
 				magreload()

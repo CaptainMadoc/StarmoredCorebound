@@ -37,7 +37,7 @@
 					"firing" : {
 						"fire" : {
 							"properties" : {
-								"image" : "/animations/muzzleflash/bulletmuzzle3/bulletmuzzle3.png:<frame>"
+								"image" : "/animations/StarmoredCorebound/wg-mg500-flash/wg-mg500-flash.png:<frame>"
 							}
 						},
 						"off" : {

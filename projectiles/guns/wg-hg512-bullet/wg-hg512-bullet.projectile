@@ -1,12 +1,12 @@
 {
-  "projectileName" : "wg-rf-5-bullet",
-  "image" : "wg-rf-5-bullet.png",
+  "projectileName" : "wg-hg512-bullet",
+  "image" : "wg-hg512-bullet.png",
   "animationCycle" : 0.25,
   "lightColor" : [255, 100, 26],
-  "level" : 1,
   "frameNumber" : 1,
-  "damageKindImage" : "icon.png",
   "pointLight" : false,
+  "speed" : 50,
+  "power" : 5.0,
   "actionOnReap" : [
     {
       "action" : "config",
@@ -15,3 +15,5 @@
   ],
   "damageKind" : "default"
 }
+
+

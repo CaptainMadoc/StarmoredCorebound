@@ -1,10 +1,10 @@
 {
   "projectileName" : "wg-b2120-rocket",
-  "frames" : "wg-b2120-rocket.png",
+  "image" : "wg-b2120-rocket.png",
   "animationCycle" : 0.2,
   "frameNumber" : 4,
   "damageKindImage" : "icon.png",
-  "lightColor" : [235, 126, 2],
+  "lightColor" : [255, 100, 26],
   "pointLight" : true,
   "actionOnReap" : [
     {
@@ -12,10 +12,10 @@
       "file" : "/projectiles/explosions/regularexplosion2/regularexplosion2.config"
     }
   ],
-  "emitters" : [ "rocketsmoke" ],
+  "emitters" : [ "wg-b2120-rocketsmoke" ],
   "flippable" : true,
   "speed" : 1.0,
-  "acceleration" : 150,
+  "acceleration" : 200,
   "physics" : "rocket",
   "damageType" : "NoDamage",
   "damageKind" : "default"
