@@ -1,0 +1,20 @@
+{
+  "itemName" : "armocore-1stgen-solid-1000",
+  "price" : 5,
+  "rarity" : "Common",
+  "tooltipKind" : "ammoitem",
+  "category" : "Rifle",
+  "inventoryIcon" : "/items/augments/ammo/armocore/1stgen/armocore-1stgen-solid1000-i.png",
+  "description" : "",
+  "shortdescription" : "Rifle Ammo",
+
+  "ammoType" : "armocore-1stgen-solid",									//type of ammo, has to be same as itemname since it's used for giving the ammo back in case of unloading
+  "ammoTag"  : "armocore-1stgen-solid",												//ammo tag, has to match one of the tags in weapons "ammoTags" list
+  "ammoName" : "Ballistic Rifle Ammo",										//used for the tooltip
+  "ammoIcon" : "/items/augments/ammo/armocore/1stgen/armocore-1stgen-solid-i.png",				//used for the tooltip
+  "ammoProjectileCount" : 1,										//overrides projectile count for the primary. Damage is divided evenly across the projectiles
+  "ammoCount" : 1000,													//determines how much ammo this item restores. The excess will be returned in items specified in "ammoType"
+  "ammoDamage" : 0,													//damage per shot added by this type of ammo. This damage is split between all projectiles if projectile count is not 1
+
+  "scripts" : [ "/items/augments/ammo/ammo.lua" ]
+}

@@ -1,0 +1,23 @@
+{
+  "projectileName" : "armocore-1stgen-rocket-proj",
+  "image" : "armocore-1stgen-rocket-proj.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [235, 126, 2],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosion2.config"
+    }
+  ],
+  "emitters" : [ "rocketsmoke" ],
+  "flippable" : true,
+  "speed" : 10,
+  "scripts" : [ "armocore-1stgen-rocket-proj.lua" ],
+  "maxSpeed" : 150,
+  "controlForce" : 150,
+  "physics" : "rocket",
+  "damageKind" : "default"
+}

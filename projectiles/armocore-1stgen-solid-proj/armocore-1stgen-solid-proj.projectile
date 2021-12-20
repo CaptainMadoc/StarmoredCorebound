@@ -1,0 +1,17 @@
+{
+  "projectileName" : "armocore-1stgen-solid-proj",
+  "image" : "armocore-1stgen-solid-proj.png",
+  "animationCycle" : 0.25,
+  "timeToLive" : 1.5,
+  "fullbright" : true,
+  "lightColor" : [255, 100, 26],
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "speed" : 70
+}

@@ -1,0 +1,18 @@
+{
+  "projectileName" : "armocore-wgrf35-proj",
+  "image" : "armocore-wgrf35-proj.png",
+  "animationCycle" : 0.25,
+  "lightColor" : [255, 100, 26],
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "lightColor" : [235, 126, 2],
+  "damageKind" : "default",
+  "speed" : 70
+}
