@@ -17,15 +17,12 @@ function ReloadAmmo:update(dt,fireMode,shiftHeld)
 	then
 		if self.weapon.reloadParam then --reloadParam is false for ejection and an array for energy reload
 			if self.weapon.ammoAmount < self.weapon.ammoMax
-				and not status.resourceLocked("energy")
 			then
-				if status.overConsumeResource("energy", self.weapon.reloadParam[2]) then	
 					self.weapon.ammoAmount = math.min(self.weapon.ammoMax,self.weapon.ammoAmount+self.weapon.reloadParam[1])
 					activeItem.setInstanceValue("ammoAmount",self.weapon.ammoAmount)
 					animator.playSound("switchAmmo")
 					animator.setAnimationState("gunState","reloading")
 					self.cooldownTimer = self.weapon.reloadParam[3]
-				end
 			end
 		else
 			local extraStorage = config.getParameter("extraAmmoList") or {}

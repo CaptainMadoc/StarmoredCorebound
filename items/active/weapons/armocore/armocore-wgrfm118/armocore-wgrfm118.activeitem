@@ -103,14 +103,14 @@
 
 
   "baseOffset" : [1, 0.375],			//Offsets are 0.125 per pixel
-  "muzzleOffset" : [2.375, 0.125],		//Offsets are 0.125 per pixel
+  "muzzleOffset" : [3.375, 0.125],		//Offsets are 0.125 per pixel
   "handGrip" : "inside",
-  "scripts" : ["/items/active/weapons/ranged/gunammo.lua"],
+  "scripts" : ["/items/active/weapons/ranged/armocoregunammo.lua"],
 
   "elementalType" : "physical",
   
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfireammo.lua"],
+    "scripts" : ["/items/active/weapons/ranged/armocoregunfireammo.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.25,
@@ -119,7 +119,7 @@
     "energyUsage" : 0,
     "inaccuracy" : 0,
 
-	"projectileType" : "armocore-1stgen-solid-proj",
+	"projectileType" : "armocore-1stgen-solidspd-proj",
 
     "projectileCount" : 1,
     "fireType" : "auto", //burst
@@ -127,7 +127,8 @@
 	//"burstTime"	: 0.25,
 
     "projectileParameters" : {
-      "knockback" : 5
+      "knockback" : 1,
+	  "piercing" : true
     },
     "stances" : {
       "idle" : {

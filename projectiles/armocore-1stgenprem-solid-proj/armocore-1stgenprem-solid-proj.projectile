@@ -13,5 +13,5 @@
       "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
     }
   ],
-  "speed" : 70
+  "damagePoly" : [ [-2, -8], [8, -8], [8, -6], [-2, -6] ]
 }

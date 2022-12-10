@@ -28,13 +28,12 @@ function GunFire:update(dt, fireMode, shiftHeld)
   if self.fireMode == (self.activatingFireMode or self.abilitySlot) 
     and not self.weapon.currentAbility
     and self.cooldownTimer == 0
-    and (not status.resourceLocked("energy") or self:useEnergy())
     and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 		if (self.weapon.ammoAmount > 0) and (self.weapon.cocked) then
-			if self.fireType == "auto" and (status.overConsumeResource("energy", self:energyPerShot()) or self:useEnergy()) then
+			if self.fireType == "auto" then
 				self:setState(self.auto)
 			elseif not self.fireHeld then
-				if self.fireType == "semi" and (status.overConsumeResource("energy", self:energyPerShot()) or self:useEnergy()) then
+				if self.fireType == "semi" then
 					self:setState(self.semi)
 				end
 			elseif self.fireType == "bolt" then
@@ -100,7 +99,7 @@ function GunFire:burst()
   self.weapon:setStance(self.stances.fire)
 
   local shots = math.min(self.burstCount,self.weapon.ammoAmount)
-  while shots > 0 and (status.overConsumeResource("energy", self:energyPerShot())or self:useEnergy()) do
+  while shots > 0 do
 	self.weapon.ammoAmount = self.weapon.ammoAmount - 1
 	activeItem.setInstanceValue("ammoAmount",self.weapon.ammoAmount)
 	if self.weapon.ammoCasing then
@@ -178,10 +177,6 @@ function GunFire:fireProjectile(projectileType, projectileParams, inaccuracy, fi
   return projectileId
 end
 
-function GunFire:useEnergy()
-	return not self.energyUsage
-end
-
 function GunFire:firePosition()
   return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
 end
@@ -190,10 +185,6 @@ function GunFire:aimVector(inaccuracy)
   local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
-end
-
-function GunFire:energyPerShot()
-  return (self.energyUsage or 0) * self.fireTime * (self.energyUsageMultiplier or 1.0)
 end
 
 function GunFire:damagePerShot()

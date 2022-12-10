@@ -1,0 +1,18 @@
+{
+  "projectileName" : "armocore-1stgen-solidsml-proj",
+  "image" : "armocore-1stgen-solidsml-proj.png",
+  "animationCycle" : 0.25,
+  "timeToLive" : 1.5,
+  "fullbright" : true,
+  "lightColor" : [255, 100, 26],
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "speed" : 50,
+  "damagePoly" : [ [0, -0.5], [6, -0.5], [6, 0.5], [0, 0.5] ]
+}

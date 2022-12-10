@@ -103,23 +103,23 @@
 
 
   "baseOffset" : [0.375, 0],			//Offsets are 0.125 per pixel
-  "muzzleOffset" : [0.5, 0],		//Offsets are 0.125 per pixel
+  "muzzleOffset" : [0.25, 0],		//Offsets are 0.125 per pixel
   "handGrip" : "wrap",
-  "scripts" : ["/items/active/weapons/ranged/gunammo.lua"],
+  "scripts" : ["/items/active/weapons/ranged/armocoregunammo.lua"],
 
   "elementalType" : "physical",
   
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfireammo.lua"],
+    "scripts" : ["/items/active/weapons/ranged/armocoregunfireammo.lua"],
     "class" : "GunFire",
 
     "fireTime" : 0.15,
     "baseDps" : 60,
 	"bonusDps" : 0,					//the parameter responsible for extra per-shot damage, introduced by ammo. Per shot damage gets spread over all the projectiles
     "energyUsage" : 0,
-    "inaccuracy" : 0.02,
+    "inaccuracy" : 0.06,
 
-	"projectileType" : "armocore-1stgen-solid-proj",
+	"projectileType" : "armocore-1stgen-solidsml-proj",
 
     "projectileCount" : 5,
     "fireType" : "auto", //burst
@@ -127,7 +127,8 @@
 	//"burstTime"	: 0.01,
 
     "projectileParameters" : {
-      "knockback" : 2
+      "knockback" : 2,
+	  "timeToLive" : 0.45
     },
     "stances" : {
       "idle" : {
