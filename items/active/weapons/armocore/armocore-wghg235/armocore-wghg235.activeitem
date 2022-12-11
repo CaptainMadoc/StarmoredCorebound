@@ -12,7 +12,7 @@
   "itemTags" : ["weapon","ranged","rifle"],
   "twoHanded" : false,
   
-  "ammoMax" : 100,			//Specifies how big the guns' magazine is. For now, consider all guns to have internal non-removable magazines
+  "ammoMax" : 99,			//Specifies how big the guns' magazine is. For now, consider all guns to have internal non-removable magazines
   "ammoAmount" : 0,			//Holds the current amount of ammo. Mostly set dynamically
   "usesAmmo" : true,		//Used by ammo to determine if it should bother trying to load into the gun
   "ammoTags" : ["armocore-1stgen-solid"],	//Tags, specifying the kind of ammo the gun takes
@@ -113,7 +113,7 @@
     "scripts" : ["/items/active/weapons/ranged/armocoregunfireammo.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.45,
+    "fireTime" : 0.2,
     "baseDps" : 35,
 	"bonusDps" : 0,					//the parameter responsible for extra per-shot damage, introduced by ammo. Per shot damage gets spread over all the projectiles
     "energyUsage" : 0,
