@@ -1,0 +1,22 @@
+{
+  "projectileName" : "armocore-1stgen-napalm-proj",
+  "image" : "armocore-1stgen-napalm-proj.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [235, 126, 2],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/regularexplosion2/regularexplosion2.config"
+    }
+  ],
+  "emitters" : [ "napalm" ],
+  "flippable" : true,
+  "speed" : 60,
+  "damageKind" : "flamethrower",
+  "statusEffects" : [
+    "burning"
+  ]
+}
